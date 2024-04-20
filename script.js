@@ -8,6 +8,8 @@ todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("change", filterTodo);
 
+// todoInput.value = "Hello";
+
 function addTodo(event) {
     event.preventDefault();
     const todoDiv = document.createElement("div");
@@ -30,7 +32,7 @@ function addTodo(event) {
     todoDiv.appendChild(trashButton);
 
     todoList.appendChild(todoDiv);
-    todoInput.value = "";
+    todoInput.value = "";   // clearing the input value with empty string
 }
 
 function deleteCheck(e) {
